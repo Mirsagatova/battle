@@ -1,0 +1,158 @@
+//products
+.products {
+    .container {
+        padding: 150px 0;
+    }
+    &__list {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 32%;
+        padding: 100px 0 30px 0;
+        background-color: rgb(233, 233, 233) !important;
+        border-radius: 8px !important;
+        &-image-part {
+            width: 100px;
+            height: auto;
+        }
+        &__image {
+            width: 100%;
+        }
+        &-content-part {
+            text-align: center;
+        }
+        &__content {
+            font-family: 'Manrope', sans-serif;//font-family
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 1.28571px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            transition: .3s;
+            &-title {
+                margin-right: 12px;
+                font-family: 'Manrope', sans-serif;//font-family
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #000000;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
+            &-image {
+                width: 6.5px;
+                height: auto;
+            }
+        }
+        &__link:hover .products__item__link-title {
+            color: #D87D4A;
+        }
+    }
+}
+
+
+//reponsive
+@media (max-width: 1150px) {
+    .container {
+        width: 850px;
+    }
+}
+@media (max-width: 870px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (max-width: 770px) {
+    .container {
+        width: 650px;
+    }
+}
+@media (max-width: 670px) {
+    .container {
+        width: 550px;
+    }
+    .products {
+        .container {
+            padding: 150px 0;
+        }
+        &__list {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        &__item {
+            width: 100%;
+            padding: 100px 0 30px 0;
+            background-color: #F1F1F1;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            //&-image-part {}
+            &-content-part {
+                text-align: center;
+            }
+            &__content {
+                font-family: 'Manrope', sans-serif;//font-family
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 1.28571px;
+                text-transform: uppercase;
+                color: #000000;
+            }
+            &__link {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                transition: .3s;
+                &-title {
+                    margin-right: 12px;
+                    font-family: 'Manrope', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 18px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+                &-image {
+                    width: 6.5px;
+                    height: auto;
+                }
+            }
+            &__link:hover .products__item__link-title {
+                color: #D87D4A;
+            }
+        }
+        &__item:last-child {
+            margin-bottom: 0%;
+        }
+    }
+
+}
+@media (max-width: 570px) {
+    .container {
+        width: 450px;
+    }
+}
+@media (max-width: 470px) {
+    .container {
+        width: 300px;
+    }
+}

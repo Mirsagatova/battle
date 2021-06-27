@@ -1,0 +1,143 @@
+//audio-gear
+.audio-gear {
+    background-color: #F2F2F2;
+    .container {
+        padding: 150px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content-part{
+        width: 45%;
+    }
+    &__title {
+        width: 100%;
+        font-family: Manrope;//font-family
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 1.42857px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 32px;
+        &__mark {
+            color:  #D87D4A;
+            background-color: #F2F2F2;
+        }
+    }
+    &__content {
+        width: 100%;
+        font-family: Manrope;//font-family
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+    &__image-part{
+        width: 45%;
+    }
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+}
+//responsive
+@media (max-width: 1150px) {
+    .container {
+        width: 850px;
+    }
+    .audio-gear {
+        .container {
+            flex-direction: column-reverse;
+            .container {
+                padding: 90px 0;
+            }
+        }
+        &__content-part{
+            width: 80%;
+            text-align: center;
+        }
+        &__image-part{
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+}
+@media (max-width: 870px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (max-width: 770px) {
+    .container {
+        width: 650px;
+    }
+}
+@media (max-width: 670px) {
+    .container {
+        width: 550px;
+    }
+}
+@media (max-width: 570px) {
+    .container {
+        width: 450px;
+    }
+    .audio-gear {
+        &__content-part{
+            width: 100%;
+            text-align: center;
+        }
+        &__title {
+            width: 100%;
+            font-family: Manrope;//font-family
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 40px;
+            letter-spacing: 1.42857px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 32px;
+            &__mark {
+                color:  #D87D4A;
+                background-color: #F2F2F2;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .container {
+        width: 300px;
+    }
+    .audio-gear {
+        .container {
+            padding: 100px 0;
+        }
+        &__content-part{
+            width: 100%;
+            text-align: center;
+            padding: 0 5px;
+        }
+        &__title {
+            width: 100%;
+            font-family: Manrope;//font-family
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 1.42857px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 32px;
+            &__mark {
+                color:  #D87D4A;
+                background-color: #F2F2F2;
+            }
+        }
+    }
+}

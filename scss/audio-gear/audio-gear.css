@@ -1,0 +1,147 @@
+.audio-gear {
+  background-color: #F2F2F2;
+}
+.audio-gear .container {
+  padding: 150px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.audio-gear__content-part {
+  width: 45%;
+}
+.audio-gear__title {
+  width: 100%;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.audio-gear__title__mark {
+  color: #D87D4A;
+  background-color: #F2F2F2;
+}
+.audio-gear__content {
+  width: 100%;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.audio-gear__image-part {
+  width: 45%;
+}
+.audio-gear__image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 850px;
+  }
+
+  .audio-gear .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .audio-gear .container .container {
+    padding: 90px 0;
+  }
+  .audio-gear__content-part {
+    width: 80%;
+    text-align: center;
+  }
+  .audio-gear__image-part {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 870px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (max-width: 770px) {
+  .container {
+    width: 650px;
+  }
+}
+@media (max-width: 670px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (max-width: 570px) {
+  .container {
+    width: 450px;
+  }
+
+  .audio-gear__content-part {
+    width: 100%;
+    text-align: center;
+  }
+  .audio-gear__title {
+    width: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+  .audio-gear__title__mark {
+    color: #D87D4A;
+    background-color: #F2F2F2;
+  }
+}
+@media (max-width: 470px) {
+  .container {
+    width: 300px;
+  }
+
+  .audio-gear .container {
+    padding: 100px 0;
+  }
+  .audio-gear__content-part {
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+  }
+  .audio-gear__title {
+    width: 100%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+  .audio-gear__title__mark {
+    color: #D87D4A;
+    background-color: #F2F2F2;
+  }
+}/*# sourceMappingURL=audio-gear.css.map */
